@@ -1,0 +1,228 @@
+{
+    "recetas": [
+      {
+        "id": "1",
+        "nombre": "Cloud Bread",
+        "foto": "https://i.blogs.es/37cda4/tik-tok1/1366_2000.jpg",
+        "porciones": "9 unidades",
+        "ingredientes": [
+          {
+            "ingrediente": "Eggs",
+            "cantidad": "3 pz"
+          },
+          {
+            "ingrediente": "Cream cheese",
+            "cantidad": "100 g"
+          },
+          {
+            "ingrediente": "Baking soda",
+            "cantidad": "1/4 teaspoon"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "nombre": "Baked Oatmeal",
+        "foto": "https://i.blogs.es/de56f3/tik-tok-avena/1024_2000.jpg",
+        "porciones": "1",
+        "ingredientes": [
+          {
+            "ingrediente": "Oats",
+            "cantidad": "100 g"
+          },
+          {
+            "ingrediente": "Banana",
+            "cantidad": "1 pz"
+          },
+          {
+            "ingrediente": "Milk",
+            "cantidad": "250 ml"
+          },
+          {
+            "ingrediente": "Cinnamon",
+            "cantidad": "1 teaspoon"
+          },
+          {
+            "ingrediente": "Vanilla",
+            "cantidad": "1 teaspoon"
+          },
+          {
+            "ingrediente": "Chia seeds",
+            "cantidad": "10 g"
+          },
+          {
+            "ingrediente": "Salt",
+            "cantidad": "A pinch"
+          },
+          {
+            "ingrediente": "Chopped walnuts",
+            "cantidad": "15 g"
+          },
+          {
+            "ingrediente": "Blueberries",
+            "cantidad": "25 g"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "nombre": "Pasta Chips",
+        "foto": "https://i.blogs.es/6c9423/213800194_361581485385267_6080094523872781678_n/450_1000.jpg",
+        "porciones": "4",
+        "ingredientes": [
+          {
+            "ingrediente": "Dry pasta",
+            "cantidad": "500 g"
+          },
+          {
+            "ingrediente": "Parmesan cheese",
+            "cantidad": "To taste"
+          },
+          {
+            "ingrediente": "Salt",
+            "cantidad": "A pinch"
+          },
+          {
+            "ingrediente": "Pepper",
+            "cantidad": "A pinch"
+          },
+          {
+            "ingrediente": "Red pepper flakes",
+            "cantidad": "A pinch"
+          },
+          {
+            "ingrediente": "Extra virgin olive oil",
+            "cantidad": "1 tablespoon"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "nombre": "Mug Cake",
+        "foto": "https://i.blogs.es/ea5136/tik-tokmug-cale/1024_2000.jpg",
+        "porciones": "1",
+        "ingredientes": [
+          {
+            "ingrediente": "Dark chocolate",
+            "cantidad": "70g"
+          },
+          {
+            "ingrediente": "Butter",
+            "cantidad": "30 g"
+          },
+          {
+            "ingrediente": "Egg",
+            "cantidad": "1"
+          },
+          {
+            "ingrediente": "Sugar",
+            "cantidad": "10 - 20g"
+          },
+          {
+            "ingrediente": "Cake flour",
+            "cantidad": "20g"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "nombre": "Birriamen",
+        "foto": "https://instantstore.blog/assets/uploads/2022/04/img_5267-scaled-1046x1104-c-default.jpg",
+        "porciones": "8",
+        "ingredientes": [
+          {
+            "ingrediente": "Beef shank with bone",
+            "cantidad": "500 gr"
+          },
+          {
+            "ingrediente": "Boneless beef shank",
+            "cantidad": "800 gr"
+          },
+          {
+            "ingrediente": "Dried guajillo peppers, deveined",
+            "cantidad": "4"
+          },
+          {
+            "ingrediente": "Dried pasilla peppers, deveined",
+            "cantidad": "4"
+          },
+          {
+            "ingrediente": "Medium salad tomatoes",
+            "cantidad": "3"
+          },
+          {
+            "ingrediente": "Tomatillo",
+            "cantidad": "350 gr"
+          },
+          {
+            "ingrediente": "Carrots sliced (optional)",
+            "cantidad": "2"
+          },
+          {
+            "ingrediente": "Chayote cubes (optional)",
+            "cantidad": "1"
+          },
+          {
+            "ingrediente": "Zucchini cubes (optional)",
+            "cantidad": "1"
+          },
+          {
+            "ingrediente": "Onion in chunks",
+            "cantidad": "1"
+          },
+          {
+            "ingrediente": "Dried pasilla peppers, deveined",
+            "cantidad": "2"
+          },
+          {
+            "ingrediente": "Liters of water",
+            "cantidad": "2.5"
+          },
+          {
+            "ingrediente": "Beef bouillon cubes",
+            "cantidad": "2"
+          },
+          {
+            "ingrediente": "Uncooked ramen noodles",
+            "cantidad": "340g"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "nombre": "Cinnamon Rolls",
+        "foto": "https://i.blogs.es/e85915/cinamon/650_1200.jpg",
+        "porciones": "2",
+        "ingredientes": [
+          {
+            "ingrediente": "Bread flour",
+            "cantidad": "325 g"
+          },
+          {
+            "ingrediente": "Salt",
+            "cantidad": "2 g"
+          },
+          {
+            "ingrediente": "Sugar",
+            "cantidad": "35 g"
+          },
+          {
+            "ingrediente": "Egg",
+            "cantidad": "1 pz"
+          },
+          {
+            "ingrediente": "Butter",
+            "cantidad": "65 g"
+          },
+          {
+            "ingrediente": "Ground cinnamon",
+            "cantidad": "A pinch"
+          },
+          {
+            "ingrediente": "Powdered sugar",
+            "cantidad": "75 g"
+          }
+        ]
+      }
+    ]
+  }
