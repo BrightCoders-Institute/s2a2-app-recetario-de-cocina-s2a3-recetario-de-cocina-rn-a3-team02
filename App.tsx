@@ -6,19 +6,13 @@
  */
 
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import {View} from 'react-native';
 
 import MainPage from './screens/mainPage';
 
-const styles = StyleSheet.create({
-  background: {
-    flex: 1,
-  }
-});
-
 const App = () => {
   return (
-    <View style={styles.background} >
+    <View style={{flex: 1}}>
       <MainPage />
     </View>
   );
