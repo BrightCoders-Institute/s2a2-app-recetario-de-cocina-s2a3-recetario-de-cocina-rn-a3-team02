@@ -6,16 +6,23 @@
  */
 
 import React from 'react';
-import {View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 
 import MainPage from './screens/mainPage';
 
 const App = () => {
   return (
-    <View style={{flex: 1}}>
+    <View style={styles.background}>
       <MainPage />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  background: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+});
 
 export default App;

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {
   View,
   Text,
@@ -10,45 +10,29 @@ import {
 
 // Map => info
 
-const data = require('../Recetas.json');
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-  },
-  navegador: {
-    flex: 1,
-    backgroundColor: 'lightgreen',
-  },
-  recents: {
-    flex: 3,
-    backgroundColor: 'pink',
-  },
-  trending: {
-    flex: 2,
-    backgroundColor: 'lightblue',
-  },
-  itemContainer: {
-    // item
-  },
-});
+const trending = require('../Recetas_Trending.json');
+const recents = require('../Recetas_Recientes.json');
 
 const Carrusel = ({space}) => {
+  const {data, style, title} = space
+    ? {data: recents, style: styles.recents, title: 'Recents'}
+    : {data: trending, style: styles.trending, title: 'Trending'};
+
   return (
-    <View style={space ? styles.recents : styles.trending}>
-      <Text>{space ? 'Recents' : 'Trending'}</Text>
+    <View style={style}>
+      <Text style={styles.titles}>{title}</Text>
       <FlatList
         horizontal
+        contentContainerStyle={styles.list}
         data={data.recetas}
         renderItem={({item}) => (
           <TouchableOpacity style={styles.itemContainer}>
             <Image
               source={{uri: item.foto}}
-              style={{width: 150, height: 150}}
+              style={styles.image}
               onError={e => console.log('Error loading image', e)}
             />
-            <Text>{item.nombre}</Text>
+            <Text style={styles.titleColor}>{item.nombre}</Text>
           </TouchableOpacity>
         )}
       />
@@ -59,7 +43,7 @@ const Carrusel = ({space}) => {
 const MainPage = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.navegador}>
+      <View style={styles.navigator}>
         <Text>Navegador</Text>
       </View>
       <Carrusel space={false} />
@@ -67,5 +51,48 @@ const MainPage = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  list: {
+    columnGap: 30,
+  },
+  container: {
+    flex: 1,
+    padding: 20,
+    rowGap: 10,
+    color: 'black',
+  },
+  titles: {
+    fontSize: 30,
+    fontWeight: 'bold',
+  },
+  navigator: {
+    flex: 0.4,
+  },
+  recents: {
+    flex: 1,
+  },
+  trending: {
+    flex: 1,
+  },
+  image: {
+    width: 150,
+    height: 150,
+
+    borderRadius: 10,
+  },
+  itemContainer: {
+    borderWidth: 1,
+    borderRadius: 20,
+    padding: 10,
+  },
+  titleColor: {
+    textAlign: 'center',
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'black',
+    marginTop: 15,
+  },
+});
 
 export default MainPage;

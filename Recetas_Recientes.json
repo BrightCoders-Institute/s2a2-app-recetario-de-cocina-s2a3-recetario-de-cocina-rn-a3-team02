@@ -1,0 +1,217 @@
+{
+    "recetas": [
+      {
+        "id": "1",
+        "nombre": "Caprese Salad",
+        "foto": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/07/Caprese-Salad-2-2.jpg",
+        "porciones": "2",
+        "ingredientes": [
+          {
+            "ingrediente": "Tomatoes",
+            "cantidad": "4"
+          },
+          {
+            "ingrediente": "Fresh mozzarella cheese",
+            "cantidad": "200 g"
+          },
+          {
+            "ingrediente": "Fresh basil leaves",
+            "cantidad": "1 cup"
+          },
+          {
+            "ingrediente": "Extra virgin olive oil",
+            "cantidad": "3 tablespoons"
+          },
+          {
+            "ingrediente": "Balsamic vinegar",
+            "cantidad": "2 tablespoons"
+          },
+          {
+            "ingrediente": "Salt",
+            "cantidad": "To taste"
+          },
+          {
+            "ingrediente": "Black pepper",
+            "cantidad": "To taste"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "nombre": "Vegetarian Quesadillas",
+        "foto": "https://www.inspiredtaste.net/wp-content/uploads/2021/03/Vegetable-Quesadilla-Recipe-1-1200.jpg",
+        "porciones": "4",
+        "ingredientes": [
+          {
+            "ingrediente": "Flour tortillas",
+            "cantidad": "8"
+          },
+          {
+            "ingrediente": "Black beans",
+            "cantidad": "1 can (15 oz)"
+          },
+          {
+            "ingrediente": "Corn kernels",
+            "cantidad": "1 cup"
+          },
+          {
+            "ingrediente": "Red bell pepper, diced",
+            "cantidad": "1"
+          },
+          {
+            "ingrediente": "Shredded cheese (cheddar or Mexican blend)",
+            "cantidad": "2 cups"
+          },
+          {
+            "ingrediente": "Cilantro, chopped",
+            "cantidad": "1/4 cup"
+          },
+          {
+            "ingrediente": "Avocado, sliced",
+            "cantidad": "2"
+          },
+          {
+            "ingrediente": "Sour cream (optional)",
+            "cantidad": "1/2 cup"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "nombre": "Greek Yogurt Parfait",
+        "foto": "https://www.homemadefoodjunkie.com/wp-content/uploads/2021/07/greek-yogurt-3.jpg",
+        "porciones": "2",
+        "ingredientes": [
+          {
+            "ingrediente": "Greek yogurt",
+            "cantidad": "2 cups"
+          },
+          {
+            "ingrediente": "Granola",
+            "cantidad": "1 cup"
+          },
+          {
+            "ingrediente": "Mixed berries",
+            "cantidad": "1 cup"
+          },
+          {
+            "ingrediente": "Honey",
+            "cantidad": "2 tablespoons"
+          },
+          {
+            "ingrediente": "Almonds, sliced",
+            "cantidad": "1/4 cup"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "nombre": "Grilled Chicken Caesar Salad",
+        "foto": "https://thewoodenskillet.com/wp-content/uploads/2021/08/grilled-chicken-caesar-salad-recipe-1.jpg",
+        "porciones": "2",
+        "ingredientes": [
+          {
+            "ingrediente": "Chicken breasts",
+            "cantidad": "2"
+          },
+          {
+            "ingrediente": "Romaine lettuce, chopped",
+            "cantidad": "1 head"
+          },
+          {
+            "ingrediente": "Croutons",
+            "cantidad": "1 cup"
+          },
+          {
+            "ingrediente": "Parmesan cheese, grated",
+            "cantidad": "1/2 cup"
+          },
+          {
+            "ingrediente": "Caesar dressing",
+            "cantidad": "1/2 cup"
+          },
+          {
+            "ingrediente": "Lemon, sliced",
+            "cantidad": "1"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "nombre": "Vegetable Stir-Fry",
+        "foto": "https://natashaskitchen.com/wp-content/uploads/2020/08/Vegetable-Stir-Fry-2.jpg",
+        "porciones": "4",
+        "ingredientes": [
+          {
+            "ingrediente": "Broccoli florets",
+            "cantidad": "2 cups"
+          },
+          {
+            "ingrediente": "Carrots, sliced",
+            "cantidad": "2"
+          },
+          {
+            "ingrediente": "Bell peppers (assorted colors), sliced",
+            "cantidad": "2"
+          },
+          {
+            "ingrediente": "Snap peas",
+            "cantidad": "1 cup"
+          },
+          {
+            "ingrediente": "Soy sauce",
+            "cantidad": "1/4 cup"
+          },
+          {
+            "ingrediente": "Sesame oil",
+            "cantidad": "1 tablespoon"
+          },
+          {
+            "ingrediente": "Garlic, minced",
+            "cantidad": "2 cloves"
+          },
+          {
+            "ingrediente": "Ginger, grated",
+            "cantidad": "1 tablespoon"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "nombre": "Mango Salsa",
+        "foto": "https://cookieandkate.com/images/2015/04/fresh-mango-salsa-recipe-1.jpg",
+        "porciones": "6",
+        "ingredientes": [
+          {
+            "ingrediente": "Mango, diced",
+            "cantidad": "3"
+          },
+          {
+            "ingrediente": "Red onion, finely chopped",
+            "cantidad": "1/2"
+          },
+          {
+            "ingrediente": "Cilantro, chopped",
+            "cantidad": "1/4 cup"
+          },
+          {
+            "ingrediente": "Lime juice",
+            "cantidad": "2 tablespoons"
+          },
+          {
+            "ingrediente": "Jalapeño, finely chopped",
+            "cantidad": "1"
+          },
+          {
+            "ingrediente": "Salt",
+            "cantidad": "To taste"
+          },
+          {
+            "ingrediente": "Black pepper",
+            "cantidad": "To taste"
+          }
+        ]
+      }
+    ]
+  }
+  
