@@ -13,7 +13,7 @@ import {
 const trending = require('../Recetas_Trending.json');
 const recents = require('../Recetas_Recientes.json');
 
-const Carrusel = ({space}) => {
+const Carrusel = ({space, navigation}) => {
   const {data, style, title} = space
     ? {data: recents, style: styles.recents, title: 'Recents'}
     : {data: trending, style: styles.trending, title: 'Trending'};
@@ -26,7 +26,13 @@ const Carrusel = ({space}) => {
         contentContainerStyle={styles.list}
         data={data.recetas}
         renderItem={({item}) => (
-          <TouchableOpacity style={styles.itemContainer}>
+          <TouchableOpacity
+            style={styles.itemContainer}
+            onPress={() =>
+              navigation.push('Details', {
+                details: item,
+              })
+            }>
             <Image
               source={{uri: item.foto}}
               style={styles.image}
@@ -40,14 +46,14 @@ const Carrusel = ({space}) => {
   );
 };
 
-const MainPage = () => {
+const MainPage = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.navigator}>
         <Text>Navegador</Text>
       </View>
-      <Carrusel space={false} />
-      <Carrusel space={true} />
+      <Carrusel space={false} navigation={navigation} />
+      <Carrusel space={true} navigation={navigation} />
     </View>
   );
 };

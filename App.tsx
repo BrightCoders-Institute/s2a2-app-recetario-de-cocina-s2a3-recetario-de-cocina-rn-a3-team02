@@ -5,24 +5,34 @@
  * @format
  */
 
-import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import * as React from 'react';
+import {StyleSheet} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import MainPage from './screens/mainPage';
+import DetailScreen from './screens/detailScreen';
+
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <View style={styles.background}>
-      <MainPage />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="MainPage">
+        <Stack.Screen name="MainPage">
+          {props => <MainPage {...props} />}
+        </Stack.Screen>
+        <Stack.Screen name="Details" component={DetailScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
-const styles = StyleSheet.create({
-  background: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-});
+// const styles = StyleSheet.create({
+//   background: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//   },
+// });
 
 export default App;
