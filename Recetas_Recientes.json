@@ -4,7 +4,7 @@
         "id": "1",
         "nombre": "Caprese Salad",
         "foto": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/07/Caprese-Salad-2-2.jpg",
-        "porciones": "2",
+        "porciones": "2 portions",
         "ingredientes": [
           {
             "ingrediente": "Tomatoes",
@@ -40,7 +40,7 @@
         "id": "2",
         "nombre": "Vegetarian Quesadillas",
         "foto": "https://www.inspiredtaste.net/wp-content/uploads/2021/03/Vegetable-Quesadilla-Recipe-1-1200.jpg",
-        "porciones": "4",
+        "porciones": "4 portions",
         "ingredientes": [
           {
             "ingrediente": "Flour tortillas",
@@ -80,7 +80,7 @@
         "id": "3",
         "nombre": "Greek Yogurt Parfait",
         "foto": "https://www.homemadefoodjunkie.com/wp-content/uploads/2021/07/greek-yogurt-3.jpg",
-        "porciones": "2",
+        "porciones": "2 portions",
         "ingredientes": [
           {
             "ingrediente": "Greek yogurt",
@@ -108,7 +108,7 @@
         "id": "4",
         "nombre": "Grilled Chicken Caesar Salad",
         "foto": "https://thewoodenskillet.com/wp-content/uploads/2021/08/grilled-chicken-caesar-salad-recipe-1.jpg",
-        "porciones": "2",
+        "porciones": "2 portions",
         "ingredientes": [
           {
             "ingrediente": "Chicken breasts",
@@ -140,7 +140,7 @@
         "id": "5",
         "nombre": "Vegetable Stir-Fry",
         "foto": "https://natashaskitchen.com/wp-content/uploads/2020/08/Vegetable-Stir-Fry-2.jpg",
-        "porciones": "4",
+        "porciones": "4 portions",
         "ingredientes": [
           {
             "ingrediente": "Broccoli florets",
@@ -180,7 +180,7 @@
         "id": "6",
         "nombre": "Mango Salsa",
         "foto": "https://cookieandkate.com/images/2015/04/fresh-mango-salsa-recipe-1.jpg",
-        "porciones": "6",
+        "porciones": "6 portions",
         "ingredientes": [
           {
             "ingrediente": "Mango, diced",

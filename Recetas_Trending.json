@@ -4,7 +4,7 @@
         "id": "1",
         "nombre": "Cloud Bread",
         "foto": "https://i.blogs.es/37cda4/tik-tok1/1366_2000.jpg",
-        "porciones": "9 unidades",
+        "porciones": "9 portions",
         "ingredientes": [
           {
             "ingrediente": "Eggs",
@@ -24,7 +24,7 @@
         "id": "2",
         "nombre": "Baked Oatmeal",
         "foto": "https://i.blogs.es/de56f3/tik-tok-avena/1024_2000.jpg",
-        "porciones": "1",
+        "porciones": "1 portions",
         "ingredientes": [
           {
             "ingrediente": "Oats",
@@ -68,7 +68,7 @@
         "id": "3",
         "nombre": "Pasta Chips",
         "foto": "https://i.blogs.es/6c9423/213800194_361581485385267_6080094523872781678_n/450_1000.jpg",
-        "porciones": "4",
+        "porciones": "4 portions",
         "ingredientes": [
           {
             "ingrediente": "Dry pasta",
@@ -100,7 +100,7 @@
         "id": "4",
         "nombre": "Mug Cake",
         "foto": "https://i.blogs.es/ea5136/tik-tokmug-cale/1024_2000.jpg",
-        "porciones": "1",
+        "porciones": "1 portions",
         "ingredientes": [
           {
             "ingrediente": "Dark chocolate",
@@ -128,7 +128,7 @@
         "id": "5",
         "nombre": "Birriamen",
         "foto": "https://instantstore.blog/assets/uploads/2022/04/img_5267-scaled-1046x1104-c-default.jpg",
-        "porciones": "8",
+        "porciones": "8 portions",
         "ingredientes": [
           {
             "ingrediente": "Beef shank with bone",
@@ -192,7 +192,7 @@
         "id": "6",
         "nombre": "Cinnamon Rolls",
         "foto": "https://i.blogs.es/e85915/cinamon/650_1200.jpg",
-        "porciones": "2",
+        "porciones": "2 portions",
         "ingredientes": [
           {
             "ingrediente": "Bread flour",

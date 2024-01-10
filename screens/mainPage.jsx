@@ -31,6 +31,7 @@ const Carrusel = ({space, navigation}) => {
             onPress={() =>
               navigation.push('Details', {
                 details: item,
+                category: title,
               })
             }>
             <Image
@@ -66,11 +67,12 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     rowGap: 10,
-    color: 'black',
+    backgroundColor: 'white',
   },
   titles: {
     fontSize: 30,
     fontWeight: 'bold',
+    color: '#B83B6F',
   },
   navigator: {
     flex: 0.4,
@@ -80,6 +82,7 @@ const styles = StyleSheet.create({
   },
   trending: {
     flex: 1,
+    paddingBottom: 2,
   },
   image: {
     width: 150,
