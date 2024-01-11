@@ -13,6 +13,19 @@ import {
 const trending = require('../Recetas_Trending.json');
 const recents = require('../Recetas_Recientes.json');
 
+export const truncateString = (str, num) => {
+  if (str === undefined) {
+    return '';
+  }
+
+  if (Array.isArray(str)) {
+    return str.join('').length > num
+      ? str.join('').slice(0, num) + '...'
+      : str.join('');
+  }
+  return str.length > num ? str.slice(0, num) + '...' : str;
+};
+
 const Carrusel = ({space, navigation}) => {
   const {data, style, title} = space
     ? {data: recents, style: styles.recents, title: 'Recents'}
@@ -20,7 +33,7 @@ const Carrusel = ({space, navigation}) => {
 
   return (
     <View style={style}>
-      <Text style={styles.titles}>{title}</Text>
+      <Text style={styles.title}>{title}</Text>
       <FlatList
         horizontal
         contentContainerStyle={styles.list}
@@ -39,7 +52,9 @@ const Carrusel = ({space, navigation}) => {
               style={styles.image}
               onError={e => console.log('Error loading image', e)}
             />
-            <Text style={styles.titleColor}>{item.nombre}</Text>
+            <Text style={styles.titleColor}>
+              {truncateString(item.nombre, 12)}
+            </Text>
           </TouchableOpacity>
         )}
       />
@@ -69,10 +84,11 @@ const styles = StyleSheet.create({
     rowGap: 10,
     backgroundColor: 'white',
   },
-  titles: {
+  title: {
     fontSize: 30,
     fontWeight: 'bold',
     color: '#B83B6F',
+    paddingBottom: 15,
   },
   navigator: {
     flex: 0.4,
@@ -82,7 +98,7 @@ const styles = StyleSheet.create({
   },
   trending: {
     flex: 1,
-    paddingBottom: 2,
+    paddingBottom: 1,
   },
   image: {
     width: 150,
@@ -92,11 +108,12 @@ const styles = StyleSheet.create({
   },
   itemContainer: {
     borderWidth: 1,
+    borderColor: 'gray',
     borderRadius: 20,
     padding: 10,
+    alignItems: 'center',
   },
   titleColor: {
-    textAlign: 'center',
     fontSize: 20,
     fontWeight: 'bold',
     color: 'black',

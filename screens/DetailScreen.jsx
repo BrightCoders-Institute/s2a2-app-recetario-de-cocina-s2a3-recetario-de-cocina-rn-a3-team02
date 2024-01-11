@@ -1,5 +1,13 @@
-import React from 'react';
-import {View, Text, ImageBackground, StyleSheet, FlatList} from 'react-native';
+import React, {useState} from 'react';
+import {
+  View,
+  Text,
+  Image,
+  ImageBackground,
+  StyleSheet,
+  FlatList,
+  TouchableOpacity,
+} from 'react-native';
 
 const Ingrediente = ({nombre, cantidad}) => {
   return (
@@ -16,6 +24,11 @@ class DetailSCreen extends React.Component {
   }
 
   render() {
+    let icon = require('../img/unliked.png');
+
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const [isLike, setIsLike] = useState(false);
+
     const {route} = this.props;
 
     const params = route.params || {};
@@ -26,7 +39,10 @@ class DetailSCreen extends React.Component {
           source={{uri: details.foto}}
           resizeMode="cover"
           style={styles.containerImg}>
-          <View style={{opacity: 1}}>
+          <TouchableOpacity>
+            <Image source={icon} style={{width: 50, height: 50}} />
+          </TouchableOpacity>
+          <View style={styles.imageText}>
             <Text style={styles.textImg}>{category}</Text>
             <Text style={styles.textImg}>{details.nombre}</Text>
           </View>
@@ -34,7 +50,7 @@ class DetailSCreen extends React.Component {
         <View style={styles.containerText}>
           <Text style={styles.text}>{details.porciones}</Text>
           <FlatList
-            contentContainerStyle={{marginTop: 20}}
+            contentContainerStyle={{marginTop: 20, paddingBottom: 20}}
             data={details.ingredientes}
             renderItem={({item}) => (
               <Ingrediente nombre={item.ingrediente} cantidad={item.cantidad} />
@@ -49,25 +65,29 @@ class DetailSCreen extends React.Component {
 const styles = StyleSheet.create({
   back: {
     flex: 1,
-    backgroundColor: '#262625',
+    backgroundColor: 'white',
   },
   text: {
-    color: 'white',
+    color: 'black',
     fontSize: 17,
     fontWeight: 'bold',
   },
-  textImg: {
-    color: 'rgba(255, 255, 255, 1)',
-    fontSize: 30,
-  },
-  containerImg: {
+  imageText: {
     flex: 1,
-    padding: 20,
-    opacity: 0.8,
     justifyContent: 'flex-end',
   },
+  textImg: {
+    color: 'black',
+    fontSize: 30,
+    backgroundColor: 'rgba(255, 255, 255, 0.7)',
+    paddingLeft: 10,
+  },
+  containerImg: {
+    flex: 0.4,
+    padding: 20,
+  },
   containerText: {
-    flex: 1,
+    flex: 0.6,
     margin: 10,
     paddingTop: 5,
     rowGap: 15,
