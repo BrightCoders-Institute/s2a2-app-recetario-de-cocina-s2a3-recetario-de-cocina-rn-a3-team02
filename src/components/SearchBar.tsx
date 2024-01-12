@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {SearchBar} from '@rneui/themed';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
+import {makeStyles} from '@rneui/themed';
 type SearchBarComponentProps = {};
 
 const SwitchComponent: React.FunctionComponent<
@@ -18,6 +19,7 @@ const SwitchComponent: React.FunctionComponent<
         placeholder="Type Here..."
         onChangeText={updateSearch}
         value={search}
+        lightTheme
       />
     </View>
   );
@@ -29,4 +31,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SwitchComponent;
+export default SearchBar;

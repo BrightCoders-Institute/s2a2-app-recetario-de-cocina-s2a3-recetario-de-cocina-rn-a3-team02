@@ -1,13 +1,13 @@
-import React, {useState} from 'react';
-import {
-  View,
-  Text,
-  Image,
-  ImageBackground,
-  StyleSheet,
-  FlatList,
-  TouchableOpacity,
-} from 'react-native';
+import React from 'react';
+import {View, Text, ImageBackground, StyleSheet, FlatList} from 'react-native';
+
+import Button from '../src/components/Button';
+
+import liked from '../img/liked.png';
+import unLiked from '../img/unliked.png';
+
+import send from '../img/send.png';
+import sended from '../img/sended.png';
 
 const Ingrediente = ({nombre, cantidad}) => {
   return (
@@ -18,49 +18,37 @@ const Ingrediente = ({nombre, cantidad}) => {
   );
 };
 
-class DetailSCreen extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const DetailSCreen = props => {
+  const {route} = props;
 
-  render() {
-    let icon = require('../img/unliked.png');
-
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const [isLike, setIsLike] = useState(false);
-
-    const {route} = this.props;
-
-    const params = route.params || {};
-    const {details = {}, category} = params;
-    return (
-      <View style={styles.back}>
-        <ImageBackground
-          source={{uri: details.foto}}
-          resizeMode="cover"
-          style={styles.containerImg}>
-          <TouchableOpacity>
-            <Image source={icon} style={{width: 50, height: 50}} />
-          </TouchableOpacity>
-          <View style={styles.imageText}>
-            <Text style={styles.textImg}>{category}</Text>
-            <Text style={styles.textImg}>{details.nombre}</Text>
-          </View>
-        </ImageBackground>
-        <View style={styles.containerText}>
-          <Text style={styles.text}>{details.porciones}</Text>
-          <FlatList
-            contentContainerStyle={{marginTop: 20, paddingBottom: 20}}
-            data={details.ingredientes}
-            renderItem={({item}) => (
-              <Ingrediente nombre={item.ingrediente} cantidad={item.cantidad} />
-            )}
-          />
+  const params = route.params || {};
+  const {details = {}, category} = params;
+  return (
+    <View style={styles.back}>
+      <ImageBackground
+        source={{uri: details.foto}}
+        resizeMode="cover"
+        style={styles.containerImg}>
+        <Button state1={liked} state2={unLiked} processNum={1} />
+        <Button state1={send} state2={sended} processNum={2} />
+        <View style={styles.imageText}>
+          <Text style={styles.textImg}>{category}</Text>
+          <Text style={styles.textImg}>{details.nombre}</Text>
         </View>
+      </ImageBackground>
+      <View style={styles.containerText}>
+        <Text style={styles.text}>{details.porciones}</Text>
+        <FlatList
+          contentContainerStyle={{marginTop: 20, paddingBottom: 20}}
+          data={details.ingredientes}
+          renderItem={({item}) => (
+            <Ingrediente nombre={item.ingrediente} cantidad={item.cantidad} />
+          )}
+        />
       </View>
-    );
-  }
-}
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   back: {
