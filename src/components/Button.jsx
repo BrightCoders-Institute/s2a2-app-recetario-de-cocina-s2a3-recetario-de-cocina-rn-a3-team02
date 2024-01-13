@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {TouchableOpacity, Image} from 'react-native';
+import React from 'react';
+import {TouchableOpacity, Image, useState} from 'react-native';
 
 const Button = ({state1, state2, processNum}) => {
   const [isActive, setIsActived] = useState(false);
@@ -20,7 +20,7 @@ const Button = ({state1, state2, processNum}) => {
   return (
     <TouchableOpacity onPress={process[processNum]}>
       <Image
-        source={isActive ? state1 : state2}
+        source={!isActive ? state1 : state2} // State1 = OFF, State2 = ON
         style={{width: 50, height: 50}}
       />
     </TouchableOpacity>

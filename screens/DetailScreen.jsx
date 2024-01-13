@@ -29,7 +29,7 @@ const DetailSCreen = props => {
         source={{uri: details.foto}}
         resizeMode="cover"
         style={styles.containerImg}>
-        <Button state1={liked} state2={unLiked} processNum={1} />
+        <Button state1={unLiked} state2={liked} processNum={1} />
         <Button state1={send} state2={sended} processNum={2} />
         <View style={styles.imageText}>
           <Text style={styles.textImg}>{category}</Text>
